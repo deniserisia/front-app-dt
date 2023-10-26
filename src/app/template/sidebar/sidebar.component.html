@@ -1,0 +1,69 @@
+<div id="layoutSidenav_nav">
+    <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+        <div class="sb-sidenav-menu">
+            <div class="nav">
+                <div class="sb-sidenav-menu-heading">Home</div>
+                <a class="nav-link" routerLink="/home">
+                    <div class="sb-nav-link-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    Dashboard
+                </a>
+                <div class="sb-sidenav-menu-heading">Serviços</div>
+
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts"
+                ><div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                Administração
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
+            ></a>
+            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link" routerLink="/clientes/formulario-de-cadastro">Clientes</a>
+                    <a class="nav-link" routerLink="/formulario-de-cadastro-de-colaboradores">Colaboradores</a>
+                    <a class="nav-link" routerLink="/formulario-de-cadastro-de-servicos">Serviços</a>
+                </nav>
+            </div>
+                <a class="nav-link collapsed" routerLink="/conheça-nossos-produtos-e-serviços" 
+                    data-toggle="collapse" data-target="#collapseLayouts" 
+                    aria-expanded="false" aria-controls="collapseLayouts"
+                    ><div class="sb-nav-link-icon"><i class="fas fa-store"></i></div>
+                    Produtos
+                </a>
+
+                <a class="nav-link collapsed" routerLink="/material-de-apoio" 
+                    data-toggle="collapse" data-target="#collapseLayouts" 
+                    aria-expanded="false" aria-controls="collapseLayouts"
+                    ><div class="sb-nav-link-icon"><i class="fas fa-tablet-alt"></i></div>
+                    Materias de Apoio
+                </a>
+
+                <a class="nav-link collapsed" routerLink="/clientes" 
+                data-toggle="collapse" data-target="#collapseLayouts" 
+                aria-expanded="false" aria-controls="collapseLayouts"
+                ><div class="sb-nav-link-icon">   <i class="fas fa-vote-yea"></i>
+                </div>
+                Financeiro
+                </a>
+
+                <a class="nav-link collapsed" routerLink="/clientes" 
+                data-toggle="collapse" data-target="#collapseLayouts" 
+                aria-expanded="false" aria-controls="collapseLayouts"
+                ><div class="sb-nav-link-icon"><i class="fas fa-user-friends"></i></div>
+                Fale Conosco
+                </a>
+
+
+                <div class="sb-sidenav-menu-heading">Configurações</div>
+                <a class="nav-link collapsed"
+                    data-toggle="collapse" data-target="#collapseLayouts" 
+                    aria-expanded="false" aria-controls="collapseLayouts"
+                    ><div class="sb-nav-link-icon"><i class="fas fa-user-edit"></i></div>
+                    Meu Perfil
+                </a>
+            </div>
+        </div>
+            <div class="sb-sidenav-footer">
+                <div class="small">Usuário Logado:</div>
+            </div>
+    </nav>
+</div>
