@@ -11,6 +11,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { TemplateModule } from './template/template.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoginComponent } from './login/login.component';
+import { ServicosModule } from './servicos/servicos.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LoginComponent } from './login/login.component';
     MatSlideToggleModule,
     TemplateModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    ServicosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

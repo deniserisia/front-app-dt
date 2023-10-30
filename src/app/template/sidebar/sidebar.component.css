@@ -1,0 +1,16 @@
+.sb-sidenav-custom{
+    background-color: #121C29; 
+}
+.nav-link, .sb-nav-link-icon i {
+    color: #F6F7F7; /* Define a cor do texto e dos ícones como branco */
+}
+
+.sb-sidenav-menu-heading {
+    color: white; /* Define a cor do texto dos cabeçalhos como branco */
+}
+
+/* CSS */
+.sb-sidenav-footer {
+    color: #121C29; 
+    background: #b6bcbc;
+}

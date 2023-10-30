@@ -1,3 +1,37 @@
-.cor{
-    color: #eeeeee;
+/* CSS */
+.navbar {
+    min-height: 70px; /* Altere a altura conforme desejado */
 }
+
+.custom-bg {
+    background-color: #121C29; 
+}
+.sb-nav-link-icon {
+    margin: 10px; /* Adicione margem conforme desejado */
+}
+
+.cor {
+    color: white; /* Defina a cor do texto como branca */
+}
+
+/* Estilo para dispositivos móveis e tablets */
+@media (max-width: 991px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-brand {
+        order: 2;
+    }
+
+    .btn-link {
+        order: 1;
+    }
+
+    .nav-link {
+        order: 3;
+    }
+}
+
