@@ -19,7 +19,7 @@ COPY . .
 RUN npm run build -- --configuration=development
 
 # Expose the port that the application will run on
-EXPOSE 80
+EXPOSE 84
 
 # Define the command to start the application
 CMD [ "npm", "start" ]
