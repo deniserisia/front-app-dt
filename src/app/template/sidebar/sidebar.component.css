@@ -6,7 +6,11 @@
 }
 
 .sb-sidenav-menu-heading {
-    color: white; /* Define a cor do texto dos cabeçalhos como branco */
+    color: #A6A6A6 /* Define a cor do texto dos cabeçalhos como branco */
+}
+
+.icon-color {
+    color:  #F9C264; /* Substitua #FF0000 pela cor desejada, por exemplo, vermelho. */
 }
 
 /* CSS */

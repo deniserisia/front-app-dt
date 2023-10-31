@@ -15,6 +15,7 @@ import { ProjetoService } from './service/projeto.service';
 import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
 import { TokenInterceptor } from './service/token.interceptor';
 import { HomeModule } from './home/home.module';
+import { ConfigModule } from './config/config.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { HomeModule } from './home/home.module';
     FormsModule,
     ServicosModule,
     HttpClientModule,
-    HomeModule
+    HomeModule,
+    ConfigModule
   ],
   providers: [
     ProjetoService,

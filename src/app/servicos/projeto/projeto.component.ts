@@ -3,6 +3,7 @@ import { Projeto } from './projeto';
 import { Params, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { ProjetoService } from 'src/app/service/projeto.service';
+import { StatusProjeto } from './statusProjeto';
 
 @Component({
   selector: 'app-projeto',
@@ -16,7 +17,7 @@ export class ProjetoComponent  implements OnInit {
   errors!: String[];
   id!: number;
   activatedRoute: any;
-  cliente: any;
+  statusProjeto = StatusProjeto;
 
   constructor( 
       private service: ProjetoService,
@@ -73,6 +74,10 @@ export class ProjetoComponent  implements OnInit {
 
     }
 
+  }
+  
+  getEnumKeys(enumObj: any): string[] {
+    return Object.values(enumObj);
   }
 
 }

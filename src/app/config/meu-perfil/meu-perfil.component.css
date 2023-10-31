@@ -1,0 +1,119 @@
+
+h1 {
+    font-size: 26px;
+    color:  #121C29; 
+    margin: 20px 0; /* Espaçamento superior e inferior */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    background-color:  #b6bcbc; 
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px; 
+}
+  
+  /* Estilo para a lista de navegação (breadcrumb) */
+  ol.breadcrumb {
+    background-color:  #b6bcbc; /* Cor de fundo da lista */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+  }
+  
+  /* Estilo para o item ativo da lista de navegação (breadcrumb) */
+  li.breadcrumb-item.active {
+    font-weight: bold; /* Texto em negrito */
+    color: #333; /* Cor do texto do item ativo */
+    text-align: center;
+  }
+  
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3F769C;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 90px;
+    padding: 20px;
+    background-color: #3F769C;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.profile-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.user-info {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.user-avatar {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    border: 5px solid #ddd;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-avatar img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.user-text h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.user-text p {
+    margin: 10px 0;
+}
+
+
+
+
+
+
+/* Seu estilo personalizado pode ser adicionado aqui */
+
+.user-projects,
+.user-dividastecnicas {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.user-projects h2 {
+    font-size: 20px;
+}
+
+.user-dividastecnicas h2 {
+    font-size: 20px;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}

@@ -22,7 +22,7 @@ export class ProjetoService {
     return this.http.put<Projeto>(`${this.apiURL}/${projeto.id}` , projeto);
   }
 
-  getProjeto() : Observable<Projeto[]> {
+  getProjetos() : Observable<Projeto[]> {
     return this.http.get<Projeto[]>(this.apiURL);
   }
   
