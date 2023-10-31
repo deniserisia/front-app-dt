@@ -4,18 +4,21 @@ import { CommonModule } from '@angular/common';
 import { ServicosRoutingModule } from './servicos-routing.module';
 import { ProjetoComponent } from './projeto/projeto.component';
 import { DividaTecnicaComponent } from './divida-tecnica/divida-tecnica.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     ProjetoComponent,
     DividaTecnicaComponent,
-    DashboardComponent
   ],
   imports: [
     CommonModule,
-    ServicosRoutingModule
+    ServicosRoutingModule,
+    FormsModule
+  ], exports:[
+    ProjetoComponent,
+    DividaTecnicaComponent,
   ]
 })
 export class ServicosModule { }
