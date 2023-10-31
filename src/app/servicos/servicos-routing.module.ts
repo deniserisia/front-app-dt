@@ -9,6 +9,7 @@ const routes: Routes = [
     {path:'projeto', component: ProjetoComponent},
     {path:'projeto/:id', component: ProjetoComponent},
     {path:'divida-tecnica', component: DividaTecnicaComponent },
+    {path:'divida-tecnica/:id', component: DividaTecnicaComponent },
   ]}
 ];
 
