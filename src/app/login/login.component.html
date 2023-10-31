@@ -1,4 +1,4 @@
-<div class="bg-primary" >
+<div class="bg-primary">
     <div id="layoutAuthentication">
         <div id="layoutAuthentication_content">
             <main>
@@ -17,39 +17,47 @@
                                     </div>
 
                                     <div class="alert alert-danger" *ngFor="let erro of errors">
-                                    {{ erro }}
+                                        {{ erro }}
                                     </div>
 
                                     <form #loginForm="ngForm" (submit)="onSubmit();">
-                                        <div class="form-group">
-                                            <label class="small mb-1">Login</label>
-                                            <input type="text" name="username"
-                                                [(ngModel)]="username" autocomplete="off"
-                                                class="form-control py-4"
-                                                placeholder="Digite seu login" />
+                                        <div class="box">
+                                            <form>
+                                                <h2><img src="assets/imagens/great_icon.png" alt="great"></h2>
+                                                <div class="inputbox">
+                                                    <input type="text" required="required">
+                                                    <span>Usuário</span>
+                                                    <i></i>
+                                                </div>
+                                                <div class="inputbox">
+                                                    <input type="password" required="required">
+                                                    <span>Senha</span>
+                                                    <i></i>
+                                                </div>
+                                                <div class="link">
+                                                    <a href="#">Esqueceu a senha?</a>
+                                                    <a href="#">Criar conta</a>
+                                                </div>
+
+                                                <input type="submit" value="login">
+
+
+
+                                            </form>
                                         </div>
 
-                                        <div class="form-group">
-                                            <label class="small mb-1">Senha</label>
-                                            <input type="password" name="password"
-                                                [(ngModel)]="password"
-                                                class="form-control py-4"
-                                                placeholder="Digite sua Senha" />
-                                        </div>
 
                                         <div class="form-group align-items-center justify-content-between mt-4 mb-0">
                                             <button type="submit" class="btn btn-primary" *ngIf="!cadastrando">
                                                 Enviar
                                             </button>
 
-                                            <button type="button" class="btn btn-success" 
-                                                    
-                                                    *ngIf="cadastrando">
+                                            <button type="button" class="btn btn-success" *ngIf="cadastrando">
                                                 Cadastrar
                                             </button>
 
                                             <button type="button" (click)="cancelaCadastro()"
-                                                    class="btn btn-danger ml-1" *ngIf="cadastrando">
+                                                class="btn btn-danger ml-1" *ngIf="cadastrando">
                                                 Cancelar
                                             </button>
                                         </div>
@@ -58,7 +66,7 @@
 
                                 <div class="card-footer text-center">
                                     <div class="small">
-                                        <a href="#" >
+                                        <a href="#">
                                             Não possui Usuário? Cadastre-se!
                                         </a>
                                     </div>
