@@ -1,56 +1,44 @@
-<h1 class="mt-4">Meu Perfil</h1>
-
-<ol class="breadcrumb mb-4">
-    <li class="breadcrumb-item active"></li>
-</ol>
-
-<div class="container">
-    
+<div class="container">    
     <form #meuPerfilForm="ngForm" (ngSubmit)="onSubmit()" >
-
-        
-            
-        <div class="row">
-            <div class="col-md-6 user-info">
-                <div class="user-details row">
-                    <div class="col-md-6">
-                        <div class="user-avatar">
-                            <img src="assets/imagens/icon-user.jpg" alt="Foto do Usuário">
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="user-text">
-                            <h2>Nome do Usuário</h2>
-                            <p>Nome: John Doe</p>
-                            <p>Nome de Usuário: john_doe</p>
-                            <p>E-mail: john@example.com</p>
-                            <p>Senha: *********</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="profile-container">
+            <h1 class="profile-title">Meu Perfil</h1>
     
-        <div class="row">
-            <div class="col-md-6">
-                <div class="user-projects">
-                    <h2>Projetos Cadastrados</h2>
-                    <ul>
-                        <li>Projeto 1</li>
-                        <li>Projeto 2</li>
-                        <li>Projeto 3</li>
-                    </ul>
+            <div class="user-info">
+                <div class="user-details">
+                    <div class="user-avatar">
+                        <img src="assets/imagens/icon-user.jpg" alt="Foto do Usuário">
+                    </div>
+                    <div class="user-text">
+                        <h2>Nome do Usuário</h2>
+                        <p>Nome: John Doe</p>
+                        <p>Nome de Usuário: john_doe</p>
+                        <p>E-mail: john@example.com</p>
+                        <p>Senha: *********</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="user-dividastecnicas">
-                    <h2>DT Cadastrados</h2>
-                    <ul>
-                        <li>Projeto 1</li>
-                        <li>Projeto 2</li>
-                        <li>Projeto 3</li>
-                    </ul>
+            <!-- CADASTRO PROJETOS E DT  -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="user-projects">
+                        <h2>Projetos Cadastrados</h2>
+                        <ul>
+                            <li>Projeto 1</li>
+                            <li>Projeto 2</li>
+                            <li>Projeto 3</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="user-dividastecnicas">
+                        <h2>DT Cadastradas</h2>
+                        <ul>
+                            <li>Projeto 1</li>
+                            <li>Projeto 2</li>
+                            <li>Projeto 3</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

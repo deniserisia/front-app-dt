@@ -1,28 +1,10 @@
-
 h1 {
-    font-size: 26px;
-    color:  #121C29; 
-    margin: 20px 0; /* Espaçamento superior e inferior */
-    text-transform: uppercase; /* Texto em maiúsculas */
-    background-color:  #b6bcbc; 
-    padding: 10px;
-    text-align: center;
-    border-radius: 5px; 
-}
-  
-  /* Estilo para a lista de navegação (breadcrumb) */
-  ol.breadcrumb {
-    background-color:  #b6bcbc; /* Cor de fundo da lista */
-    padding: 10px; /* Espaçamento interno */
-    border-radius: 5px; /* Borda arredondada */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    text-align: center;
-  }
-  
-  /* Estilo para o item ativo da lista de navegação (breadcrumb) */
-  li.breadcrumb-item.active {
-    font-weight: bold; /* Texto em negrito */
-    color: #333; /* Cor do texto do item ativo */
-    text-align: center;
-  }
-  
+  font-size: 26px;
+  color: black;
+  margin: 20px 0; /* Espaçamento superior e inferior */
+  text-transform: uppercase; /* Texto em maiúsculas */
+  background-color: #6BA3ED;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+} 

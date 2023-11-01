@@ -1,8 +1,6 @@
-<h1 class="mt-4">Projeto</h1>
-
-<ol class="breadcrumb mb-4">
-    <li class="breadcrumb-item active">{{ projeto.id ? 'Edição' : 'Cadastro' }}</li>
-</ol>
+<h1 class="mt-4"> Projeto: 
+    {{ projeto.id ? 'Edição' : 'Cadastro' }}
+</h1>
 
 <div class="container">
     <form #projetoForm="ngForm" (ngSubmit)="onSubmit()" >

@@ -4,18 +4,18 @@
 }
 
 .custom-bg {
-    background-color: #121C29; 
+    background-color: #b6bcbc;
 }
 .sb-nav-link-icon {
     margin: 10px; /* Adicione margem conforme desejado */
 }
 
 .icon-color {
-    color:  #F9C264; /* Substitua #FF0000 pela cor desejada, por exemplo, vermelho. */
+    color:  #3F73B8; /* Substitua #FF0000 pela cor desejada, por exemplo, vermelho. */
 }
   
 .cor {
-    color: white; /* Defina a cor do texto como branca */
+    color: black; /* Defina a cor do texto como branca */
 }
 
 /* Estilo para dispositivos móveis e tablets */

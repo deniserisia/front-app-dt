@@ -17,6 +17,10 @@ import { TokenInterceptor } from './service/token.interceptor';
 import { HomeModule } from './home/home.module';
 import { ConfigModule } from './config/config.module';
 
+import { MatTableModule } from '@angular/material/table';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +38,10 @@ import { ConfigModule } from './config/config.module';
     ServicosModule,
     HttpClientModule,
     HomeModule,
-    ConfigModule
+    ConfigModule,
+    MatTableModule,
+    MatButtonModule,
+    MatIconModule,
   ],
   providers: [
     ProjetoService,
