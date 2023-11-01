@@ -34,6 +34,10 @@ export class InicioComponent implements OnInit {
       .subscribe( resposta => this.dividasTecnicas = resposta);
   }
 
+  consultar(){
+   
+  }
+
   novoCadastro(){
     this.router.navigate(['/serviçoes/projeto'])
   }

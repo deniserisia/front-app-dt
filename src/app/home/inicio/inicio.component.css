@@ -1,4 +1,9 @@
-/* Adicione este código CSS ao seu arquivo de estilos */
+h1 {
+  font-size: 26px;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+} 
 
 /* Estilo da tabela */
 table {
