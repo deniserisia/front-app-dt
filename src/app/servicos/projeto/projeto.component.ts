@@ -43,7 +43,7 @@ export class ProjetoComponent  implements OnInit {
   }
 
   voltarParaListagem(){
-    //this.router.navigate(['/clientes/lista'])
+    this.router.navigate(['/home/inicio'])
   }
 
   onSubmit(){
