@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http'
+import { HttpClient, HttpParams } from '@angular/common/http'
 
 import { Projeto } from '../servicos/projeto/projeto';
 import { environment } from 'src/environment/environment.dev';
 import { Observable } from 'rxjs';
+import { InicioComponent } from '../home/inicio/inicio.component';
+import { projetoBusca } from '../servicos/projeto/projetoBusca';
 
 @Injectable({
   providedIn: 'root'
@@ -32,5 +34,14 @@ export class ProjetoService {
 
   deletar(projeto: Projeto) : Observable<any> {
     return this.http.delete<any>(`${this.apiURL}/${projeto.id}`);
+  }
+
+  buscarProjeto(nomeDoProjeto: string, empresa: string) : Observable<projetoBusca[]>{
+    const httpParams = new HttpParams()
+      .set("nomeDoProjeto", nomeDoProjeto)
+      .set("empresa", empresa);
+
+    const url = this.apiURL + "?" + httpParams.toString();
+    return this.http.get<any>(url);
   }
 }

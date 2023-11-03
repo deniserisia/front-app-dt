@@ -11,11 +11,12 @@
 }
 
 .icon-color {
-    color:  #3F73B8; /* Substitua #FF0000 pela cor desejada, por exemplo, vermelho. */
+    color:  #007bff; /* Substitua #FF0000 pela cor desejada, por exemplo, vermelho. */
 }
   
 .cor {
     color: black; /* Defina a cor do texto como branca */
+    font-weight: 400;
 }
 
 /* Estilo para dispositivos móveis e tablets */

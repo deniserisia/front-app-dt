@@ -1,8 +1,9 @@
-<h1 class="mt-4">Dívidas Tecnicas</h1>
+<h1 class="mt-4"> // Dívidas Tecnicas</h1>
 
 <ol class="breadcrumb mb-4">
-    <li class="breadcrumb-item active">{{ dividaTecnica.id ? 'Edição' : 'Cadastro' }}</li>
+    <li class="breadcrumb-item active">{{ dividaTecnica.id ? 'Edição de DT' : 'Cadastro de DT' }}</li>
 </ol>
+
 
 <div class="container">
     <form #dividasForm="ngForm" (ngSubmit)="onSubmit()" >
@@ -92,20 +93,19 @@
         </div>
 
         <div class="row">
-            <div class="col-md-3">
-                <button type="submit" class="btn btn-success" *ngIf="!dividaTecnica.id">
-                    <i class="fa fa-save" ></i> Salvar
-                </button>
-
-                <button type="submit" class="btn btn-primary" *ngIf="dividaTecnica.id">
-                    <i class="fa fa-sync-alt" ></i> Atualizar
-                </button>
-
-                <button type="button" class="btn btn-danger ml-1" (click)="voltarParaListagem()">
-                    <i class="fa fa-arrow-alt-circle-left" ></i> Voltar
-                </button>
-            </div>
-     
-        </div>
+          <div class="col-md-3">
+              <button type="button" class="btn btn-primary ml-1 mr-2" (click)="voltarParaListagem()">
+                  <i class="fa fa-arrow-alt-circle-left"></i> Voltar
+              </button>
+          
+              <button type="submit" class="btn btn-success mr-2" *ngIf="!dividaTecnica.id">
+                  <i class="fa fa-save"></i> Salvar
+              </button>
+          
+              <button type="submit" class="btn btn-info" *ngIf="dividaTecnica.id">
+                  <i class="fa fa-sync-alt"></i> Atualizar
+              </button>
+          </div>            
+      </div>
     </form>
 </div>
