@@ -11,11 +11,12 @@
 }
 
 .icon-color {
-    color:  #3F73B8; /* Substitua #FF0000 pela cor desejada, por exemplo, vermelho. #121C29;  */
+    color:  #007bff; /* Substitua #FF0000 pela cor desejada, por exemplo, vermelho. #121C29;  */
 }
 
 /* CSS */
 .sb-sidenav-footer {
     color: #000000; 
-    background: #3F73B8;
+    background: #007bff;
+    font-weight: 500;
 }

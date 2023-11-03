@@ -4,6 +4,7 @@ import { DividaTecnicaService } from 'src/app/service/divida-tecnica.service';
 import { ProjetoService } from 'src/app/service/projeto.service';
 import { DividaTecnica } from 'src/app/servicos/divida-tecnica/dividaTecnica';
 import { Projeto } from 'src/app/servicos/projeto/projeto';
+import { projetoBusca } from 'src/app/servicos/projeto/projetoBusca';
 
 @Component({
   selector: 'app-inicio',
@@ -12,6 +13,11 @@ import { Projeto } from 'src/app/servicos/projeto/projeto';
 })
 export class InicioComponent implements OnInit {
 
+  // Pesquisar sobre o Projeto
+  nomeDoProjeto!: string;
+  empresa!: string;
+  listaDosProjetos!: projetoBusca[];
+  message!: string;
 
   projetos: Projeto[] = [];
   dividasTecnicas: DividaTecnica[] = [];
@@ -34,8 +40,18 @@ export class InicioComponent implements OnInit {
       .subscribe( resposta => this.dividasTecnicas = resposta);
   }
 
-  consultar(){
-   
+  // Pesquisar sobre o projeto
+  consultarProjeto(){
+    this.service
+      .buscarProjeto(this.nomeDoProjeto, this.empresa)
+      .subscribe(response => {
+        this.listaDosProjetos = response;
+        if( this.listaDosProjetos.length <= 0 ){
+          this.message = "Nenhum Registro encontrado.";
+        }else{
+          this.message = "nada";
+        }
+      });
   }
 
   novoCadastro(){
