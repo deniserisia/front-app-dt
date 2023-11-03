@@ -1,0 +1,10 @@
+# Ignore artifacts:
+build
+coverage
+public
+styles
+node_modules
+.sass-cache
+.vscode
+dist
+# não aplica as mudanças de visuais no código desses arquivos
