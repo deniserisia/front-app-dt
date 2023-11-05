@@ -9,11 +9,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 
+import { NgChartsModule } from 'ng2-charts'; // Importe o ChartsModule
+
 
 @NgModule({
   declarations: [
     DashboardComponent,
-    InicioComponent
+    InicioComponent,
   ],
   imports: [
     CommonModule,
@@ -22,9 +24,10 @@ import { MatTableModule } from '@angular/material/table';
     MatTableModule,
     MatButtonModule,
     MatIconModule,
+    NgChartsModule
   ], exports:[
-    DashboardComponent,
-    InicioComponent
+   DashboardComponent,
+    InicioComponent,
   ]
 })
 export class HomeModule { }

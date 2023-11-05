@@ -4,7 +4,7 @@ import { LayoutComponent } from '../layout/layout.component';
 import { MeuPerfilComponent } from './meu-perfil/meu-perfil.component';
 
 const routes: Routes = [
-  {path:'configurações', component: LayoutComponent, children:[
+  {path:'configuracoes', component: LayoutComponent, children:[
     {path:'meu-perfil', component:MeuPerfilComponent}
   ]}
 ];
