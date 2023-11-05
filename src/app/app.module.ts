@@ -16,6 +16,7 @@ import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common
 import { TokenInterceptor } from './service/token.interceptor';
 import { HomeModule } from './home/home.module';
 import { ConfigModule } from './config/config.module';
+import { NgChartsModule } from 'ng2-charts';
 
 import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
@@ -42,6 +43,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatTableModule,
     MatButtonModule,
     MatIconModule,
+    NgChartsModule,
   ],
   providers: [
     ProjetoService,

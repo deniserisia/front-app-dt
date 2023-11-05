@@ -21,6 +21,7 @@ import { FaleConoscoComponent } from './fale-conosco/fale-conosco.component';
   ], exports:[
     ProjetoComponent,
     DividaTecnicaComponent,
+    FaleConoscoComponent
   ]
 })
 export class ServicosModule { }
