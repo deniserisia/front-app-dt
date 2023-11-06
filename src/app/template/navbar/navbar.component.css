@@ -1,21 +1,26 @@
 /* CSS */
 .navbar {
-    min-height: 70px; /* Altere a altura conforme desejado */
+    min-height: 70px;
+    /* Altere a altura conforme desejado */
 }
 
 .custom-bg {
     background-color: #b6bcbc;
 }
+
 .sb-nav-link-icon {
-    margin: 10px; /* Adicione margem conforme desejado */
+    margin: 10px;
+    /* Adicione margem conforme desejado */
 }
 
 .icon-color {
-    color:  #007bff; /* Substitua #FF0000 pela cor desejada, por exemplo, vermelho. */
+    color: #007bff;
+    /* Substitua #FF0000 pela cor desejada, por exemplo, vermelho. */
 }
-  
+
 .cor {
-    color: black; /* Defina a cor do texto como branca */
+    color: black;
+    /* Defina a cor do texto como branca */
     font-weight: 400;
 }
 
@@ -40,3 +45,9 @@
     }
 }
 
+@media (max-width: 371px) {
+    .navbar-brand img {
+        width: 190px;
+        height: auto;
+    }
+}
