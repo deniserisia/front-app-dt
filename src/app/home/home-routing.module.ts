@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from '../layout/layout.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProjetoComponent } from '../servicos/projeto/projeto.component';
 
 const routes: Routes = [
   {path:'home', component: LayoutComponent, children:[

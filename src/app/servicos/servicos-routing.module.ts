@@ -6,7 +6,7 @@ import { ProjetoComponent } from './projeto/projeto.component';
 import { FaleConoscoComponent } from './fale-conosco/fale-conosco.component';
 
 const routes: Routes = [
-  {path:'serviços', component: LayoutComponent, children:[
+  {path:'servicos', component: LayoutComponent, children:[
     {path:'projeto', component: ProjetoComponent},
     {path:'projeto/:id', component: ProjetoComponent},
     {path:'divida-tecnica', component: DividaTecnicaComponent },

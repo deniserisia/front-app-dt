@@ -1,3 +1,49 @@
+.mat-toolbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color:  #b6bcbc;
+  }
+
+.button-menu{
+  vertical-align: middle;
+  color: #007bff;
+}
+
+.link-icon{
+    color: #007bff;
+}
+
+.heading-home{
+    padding: 1.75rem 1rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mat-drawer-sidenav{
+    width: 200px;
+    background-color: #b6bcbc;
+    overflow-x: hidden;
+}
+
+.mat-drawer-footer{
+    display: flex;
+    background-color: #007bff;
+    padding: 0.75rem;
+    padding-left: 1rem;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 200px;
+}
+
+.mat-drawer-content{
+    height: 100vh;
+}
+  
 /* CSS */
 .navbar {
     min-height: 70px;
