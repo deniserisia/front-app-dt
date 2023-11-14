@@ -3,22 +3,28 @@ import { CommonModule } from '@angular/common';
 
 import { TemplateRoutingModule } from './template-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 import { RouterModule } from '@angular/router';
 
 
 @NgModule({
   declarations: [
-    NavbarComponent,
-    SidebarComponent
+    NavbarComponent
   ],
   imports: [
     CommonModule,
     TemplateRoutingModule,
-    RouterModule
-  ], exports:[
-    NavbarComponent,
-    SidebarComponent
+    RouterModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule, 
+    MatListModule
+  ],
+  exports: [
+    NavbarComponent
   ]
 })
 export class TemplateModule { }
