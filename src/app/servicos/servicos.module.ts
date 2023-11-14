@@ -6,6 +6,7 @@ import { ProjetoComponent } from './projeto/projeto.component';
 import { DividaTecnicaComponent } from './divida-tecnica/divida-tecnica.component';
 import { FormsModule } from '@angular/forms';
 import { FaleConoscoComponent } from './fale-conosco/fale-conosco.component';
+import { RelatoriosComponent } from './relatorios/relatorios.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { FaleConoscoComponent } from './fale-conosco/fale-conosco.component';
     ProjetoComponent,
     DividaTecnicaComponent,
     FaleConoscoComponent,
+    RelatoriosComponent,
   ],
   imports: [
     CommonModule,
@@ -21,7 +23,8 @@ import { FaleConoscoComponent } from './fale-conosco/fale-conosco.component';
   ], exports:[
     ProjetoComponent,
     DividaTecnicaComponent,
-    FaleConoscoComponent
+    FaleConoscoComponent,
+    RelatoriosComponent
   ]
 })
 export class ServicosModule { }
