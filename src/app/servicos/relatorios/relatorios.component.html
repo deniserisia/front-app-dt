@@ -1,1 +1,52 @@
-<p>relatorios works!</p>
+<div class="container pt-5">
+    <div class="cont">
+        <h1 class="mt-4"> // Relatórios</h1>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item active">Consulta de Relatórios sobre os seus Projetos e Dívidas Técnicas</li>
+        </ol>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card" style="background-color: #b6bcbc;">
+                <div class="card-body">
+                    <h5 class="card-title">Relatório em PDF</h5>
+                    <p class="card-text">Download de informações sobre projetos e dívidas técnicas em PDF.</p>
+                    <button class="btn btn-primary" style="margin-top: 20px;" (click)="downloadPDF()">Baixar PDF</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card" style="background-color: #b6bcbc;">
+                <div class="card-body">
+                    <h5 class="card-title">Projetos</h5>
+                    <p class="card-text">Confira todos os seus projetos que você tem cadastrado no sistema.</p>
+                    <button class="btn btn-primary" style="margin-top: 20px;" routerLink="/home/inicio">Acessar Projetos</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card" style="background-color: #b6bcbc;">
+                <div class="card-body">
+                    <h5 class="card-title">Dívidas Técnicas</h5>
+                    <p class="card-text">Confira todos as dívidas técnicas que você tem atrelados/vinculados aos seus projetos.</p>
+                    <button class="btn btn-primary" style="margin-top: 20px;" routerLink="/home/inicio">Acessar DT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+          <button type="button" class="btn btn-primary ml-1 mr-2" style="margin-top: 20px;" (click)="voltar()">
+            <i class="fa fa-arrow-alt-circle-left"></i> Voltar
+          </button>
+        </div>
+    </div>
+
+    <section class="cont-rel" id="pdf-content">
+        <!-- Conteúdo que será incluído no PDF -->
+        <!-- Inclua aqui informações sobre projetos e dívidas técnicas -->
+    </section>
+</div>
