@@ -22,7 +22,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Projetos</h5>
                     <p class="card-text">Confira todos os seus projetos que você tem cadastrado no sistema.</p>
-                    <button class="btn btn-primary" style="margin-top: 20px;" (click)="downloadPDF()">Acessar Projetos</button>
+                    <button class="btn btn-primary" style="margin-top: 20px;" routerLink="/home/inicio">Acessar Projetos</button>
                 </div>
             </div>
         </div>
@@ -32,11 +32,18 @@
                 <div class="card-body">
                     <h5 class="card-title">Dívidas Técnicas</h5>
                     <p class="card-text">Confira todos as dívidas técnicas que você tem atrelados/vinculados aos seus projetos.</p>
-                    <button class="btn btn-primary" style="margin-top: 20px;" (click)="downloadPDF()">Acessar DT</button>
+                    <button class="btn btn-primary" style="margin-top: 20px;" routerLink="/home/inicio">Acessar DT</button>
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+          <button type="button" class="btn btn-primary ml-1 mr-2" style="margin-top: 20px;" (click)="voltar()">
+            <i class="fa fa-arrow-alt-circle-left"></i> Voltar
+          </button>
+        </div>
+    </div>
 
     <section class="cont-rel" id="pdf-content">
         <!-- Conteúdo que será incluído no PDF -->

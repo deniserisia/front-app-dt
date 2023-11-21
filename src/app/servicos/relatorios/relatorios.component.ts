@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import * as html2pdf from 'html2pdf.js';
 
 
@@ -9,7 +10,9 @@ import * as html2pdf from 'html2pdf.js';
 })
 export class RelatoriosComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
   }
@@ -26,5 +29,8 @@ export class RelatoriosComponent implements OnInit {
     };
 
     (html2pdf as any)().from(content).set(options).outputPdf();
+  }
+  voltar(){
+    this.router.navigate(['/home/inicio'])
   }
 }
