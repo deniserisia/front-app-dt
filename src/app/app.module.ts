@@ -24,6 +24,10 @@ import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { AuthService } from './service/auth.service';
+import { DashboardService } from './service/dashboard.service';
+import { DividaTecnicaService } from './service/divida-tecnica.service';
+import { RedmineService } from './service/redmine.service';
 
 
 @NgModule({
@@ -54,6 +58,10 @@ import { MatListModule } from '@angular/material/list';
   ],
   providers: [
     ProjetoService,
+    DashboardService,
+    DividaTecnicaService,
+    RedmineService,
+    AuthService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: TokenInterceptor,

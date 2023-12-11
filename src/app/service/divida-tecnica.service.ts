@@ -11,7 +11,7 @@ import { DividaTecnica } from '../servicos/divida-tecnica/dividaTecnica';
 export class DividaTecnicaService {
  
 
-  apiURL: string = environment.apiURLBase + '/api/clientes';
+  apiURL: string = environment.apiURLBase + '/servico/divida-tecnica';
 
   constructor( private http: HttpClient ) {}
 

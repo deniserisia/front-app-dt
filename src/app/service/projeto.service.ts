@@ -12,7 +12,7 @@ import { projetoBusca } from '../servicos/projeto/projetoBusca';
 })
 export class ProjetoService {
 
-  apiURL: string = environment.apiURLBase + '/api/clientes';
+  apiURL: string = environment.apiURLBase + '/servico/projeto';
 
   constructor( private http: HttpClient ) {}
 
