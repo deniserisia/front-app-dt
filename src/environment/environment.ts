@@ -3,5 +3,5 @@ export const environment = {
     apiURLBase: 'http://localhost:8084',
     clientId: 'front-app-dt',
     clientSecret: '@321',
-   obterTokenUrl: '/oauth/token'
+    obterTokenUrl: '/oauth/token'
 };

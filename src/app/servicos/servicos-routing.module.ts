@@ -5,9 +5,10 @@ import { DividaTecnicaComponent } from './divida-tecnica/divida-tecnica.componen
 import { ProjetoComponent } from './projeto/projeto.component';
 import { FaleConoscoComponent } from './fale-conosco/fale-conosco.component';
 import { RelatoriosComponent } from './relatorios/relatorios.component';
+import { AuthGuard } from '../service/auth.guard';
 
 const routes: Routes = [
-  {path:'servicos', component: LayoutComponent, children:[
+  {path:'servicos',  canActivate: [AuthGuard], component: LayoutComponent, children:[
     {path:'projeto', component: ProjetoComponent},
     {path:'projeto/:id', component: ProjetoComponent},
     {path:'divida-tecnica', component: DividaTecnicaComponent },
