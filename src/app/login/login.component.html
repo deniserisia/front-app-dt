@@ -1,50 +1,55 @@
-<div style="background: #121C29">
-    <div id="layoutAuthentication">
-      <div id="layoutAuthentication_content">
-        <main>
-          <div
-            class="row justify-content-center align-items-center"
-            style="height: 100vh"
-          >
-            <div class="d-flex justify-content-center">
-              <div>
-                <div class="alert alert-success" *ngIf="mensagemSucesso">
-                  {{ mensagemSucesso }}
-                </div>
-  
-                <div class="alert alert-danger" *ngFor="let erro of errors">
-                  {{ erro }}
-                </div>
-  
-                <form #loginForm="ngForm" (submit)="onSubmit()">
-                  <div class="box">
-                    <form>
-                      <h2>
-                        <img src="assets/imagens/Logo5.png" alt="great" />
-                      </h2>
-                      <div class="inputbox">
-                        <input type="text" required="required" />
-                        <span>Usuário</span>
-                        <i></i>
-                      </div>
-                      <div class="inputbox">
-                        <input type="password" required="required" />
-                        <span>Senha</span>
-                        <i></i>
-                      </div>
-                      <div class="link">
-                        <a href="#">Esqueceu a senha?</a>
-                        <a href="#">Criar conta</a>
-                      </div>
-  
-                      <input class="text-login" type="submit" routerLink="/home/inicio" value="Login" />
-                    </form>
-                  </div>
-                </form>
+<div style="background: #121c29">
+  <div id="layoutAuthentication">
+    <div id="layoutAuthentication_content">
+      <main>
+        <div
+          class="row justify-content-center align-items-center"
+          style="height: 100vh"
+        >
+          <div class="d-flex justify-content-center">
+            <div>
+              <div class="alert alert-success" *ngIf="mensagemSucesso">
+                {{ mensagemSucesso }}
               </div>
+
+              <div class="alert alert-danger" *ngFor="let erro of errors">
+                {{ erro }}
+              </div>
+
+              <form #loginForm="ngForm" (submit)="onSubmit()">
+                <div class="box">
+                  <form>
+                    <h2>
+                      <img src="assets/imagens/Logo5.png" alt="great" />
+                    </h2>
+                    <div class="inputbox">
+                      <input type="text" required="required" />
+                      <span>Usuário</span>
+                      <i></i>
+                    </div>
+                    <div class="inputbox">
+                      <input type="password" required="required" />
+                      <span>Senha</span>
+                      <i></i>
+                    </div>
+                    <div class="link">
+                      <a href="#">Esqueceu a senha?</a>
+                      <a href="/cadastro">Criar conta</a>
+                    </div>
+
+                    <input
+                      class="text-login"
+                      type="submit"
+                      routerLink="/home/inicio"
+                      value="Login"
+                    />
+                  </form>
+                </div>
+              </form>
             </div>
           </div>
-        </main>
-      </div>
+        </div>
+      </main>
     </div>
   </div>
+</div>

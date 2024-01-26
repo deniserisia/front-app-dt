@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  color: #323232;
+  border: none;
+}
+
+input,
+label {
+  display: block;
+  width: 100%;
+}
+
+input:focus,
+label:focus {
+  outline: none;
+}
+
+body {
+  padding-top: 5vh;
+  background-color: #121c29;
+}
+
+#main-container {
+  width: 500px;
+  margin: auto;
+  background-color: #b6bcbc;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+#main-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.6rem; /* adaptada ao elemento raiz*/
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap; /* alinhar os elementos num formulario*/
+  justify-content: space-between;
+}
+
+.full-box {
+  flex: 1 1 100%;
+  position: relative;
+}
+
+.half-box {
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.spacing {
+  margin-right: 2.5%;
+}
+
+label {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+input {
+  border-radius: 10px;
+  border-bottom: 2px solid #323232;
+  padding: 10px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  border-color: #000ce6;
+}
+
+.btn-submit {
+  background-color: #65b741;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.teste {
+  background-color: #121c29;
+}
+
+.voltar {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  cursor: pointer;
+}

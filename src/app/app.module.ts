@@ -12,7 +12,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoginComponent } from './login/login.component';
 import { ServicosModule } from './servicos/servicos.module';
 import { ProjetoService } from './service/projeto.service';
-import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
+import {
+  HTTP_INTERCEPTORS,
+  HttpClient,
+  HttpClientModule,
+} from '@angular/common/http';
 import { TokenInterceptor } from './service/token.interceptor';
 import { HomeModule } from './home/home.module';
 import { ConfigModule } from './config/config.module';
@@ -20,13 +24,10 @@ import { ConfigModule } from './config/config.module';
 import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { CadastroComponent } from './cadastro/cadastro.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LayoutComponent,
-    LoginComponent
-  ],
+  declarations: [AppComponent, LayoutComponent, LoginComponent, CadastroComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -48,9 +49,9 @@ import { MatIconModule } from '@angular/material/icon';
     {
       provide: HTTP_INTERCEPTORS,
       useClass: TokenInterceptor,
-      multi: true
-    }
+      multi: true,
+    },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
