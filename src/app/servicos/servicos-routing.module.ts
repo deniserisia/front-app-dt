@@ -3,18 +3,23 @@ import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from '../layout/layout.component';
 import { DividaTecnicaComponent } from './divida-tecnica/divida-tecnica.component';
 import { ProjetoComponent } from './projeto/projeto.component';
-
+import { FaleConoscoComponent } from './fale-conosco/fale-conosco.component';
 const routes: Routes = [
-  {path:'serviços', component: LayoutComponent, children:[
-    {path:'projeto', component: ProjetoComponent},
-    {path:'projeto/:id', component: ProjetoComponent},
-    {path:'divida-tecnica', component: DividaTecnicaComponent },
-    {path:'divida-tecnica/:id', component: DividaTecnicaComponent },
-  ]}
+  {
+    path: 'serviços',
+    component: LayoutComponent,
+    children: [
+      { path: 'projeto', component: ProjetoComponent },
+      { path: 'projeto/:id', component: ProjetoComponent },
+      { path: 'divida-tecnica', component: DividaTecnicaComponent },
+      { path: 'divida-tecnica/:id', component: DividaTecnicaComponent },
+      { path: 'fale-conosco', component: FaleConoscoComponent },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class ServicosRoutingModule { }
+export class ServicosRoutingModule {}
